@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // this index for phone silent
                 am.setRingerMode(0);
+                Toast.makeText(MainActivity.this, "SilentMode", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //this index for phone vibrate
                 am.setRingerMode(1);
+                Toast.makeText(MainActivity.this, "VibrateMode", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //this index for phone Ringing
                 am.setRingerMode(2);
+                Toast.makeText(MainActivity.this, "GeneralMode", Toast.LENGTH_SHORT).show();
             }
         });
     }
