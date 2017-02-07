@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // this index for phone silent
                 am.setRingerMode(0);
             }
         });
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //this index for phone vibrate
                 am.setRingerMode(1);
             }
         });
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //this index for phone Ringing
                 am.setRingerMode(2);
             }
         });
